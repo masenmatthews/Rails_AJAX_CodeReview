@@ -25,7 +25,6 @@ class ProductsController < ApplicationController
     @description = @product.description
     @price = @product.price
     respond_to do |format|
-      format.html { redirect_to root_path }
       format.js
     end
   end
