@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
   end
 
   def create
+    @user = User.find(session[:user_id])
     @product = Product.new(product_params)
     if @product.save
       redirect_to '/'
@@ -24,6 +25,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @description = @product.description
     @price = @product.price
+    @image = @product.image
     respond_to do |format|
       format.js
     end
