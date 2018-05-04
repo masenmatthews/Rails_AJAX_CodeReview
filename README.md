@@ -1,15 +1,13 @@
 # README
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
+# _The Went-To-Bali E-commerce Refactor Extravaganza_
 
-# __
-
-#### _{May 4, 2018}_
+#### _A refactoring project intended to salvage the remains of an ecommerce site that was left high-and-dry by a developer who decided to move away without leaving behind a high-quality product. {May 4, 2018}_
 
 #### By _Masen Matthews_
 
 ## Description
-  __
+  _This project is designed to simulate a situation where the main developer for an e-commerce site randomly decides to move away to Bali. The developer didn't leave behind a good README, any sort of well-kept commit history, and many swaths of code that could use some refactoring. Naturally, the goal of this project is to remedy all of these issues. Additionally, AJAX is added to enhance the online shopping experience._
 
 ## Specifications / User Expectations
 
@@ -18,9 +16,9 @@ E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up yo
 * _Clone GitHub repository to desktop or desired directory_
 * _Navigate to directory in terminal_
 * _Run $ bundle and $ bundle install to ensure that the included gems are installed and functional_
-* _Run $ rake db:create to create the database associated with the program_
-* _Run $ rake db:migrate to ensure that migrations are properly executed_
-* _Run $ rake db:seed to populate the database from the seed file_
+* _Run $ bundle exec rails db:create to create the database associated with the program_
+* _Run $ bundle exec rails db:migrate to ensure that migrations are properly executed_
+* _Run $ bundle exec rails db:seed to populate the database from the seed file_
 * _Run $ rails server to launch the Rails server - the application can be viewed in a web browser by navigating to localhost:3000_
 
 ## Known Bugs
