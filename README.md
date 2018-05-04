@@ -10,6 +10,14 @@
   _This project is designed to simulate a situation where the main developer for an e-commerce site randomly decides to move away to Bali. The developer didn't leave behind a good README, any sort of well-kept commit history, and many swaths of code that could use some refactoring. Naturally, the goal of this project is to remedy all of these issues. Additionally, AJAX is added to enhance the online shopping experience._
 
 ## Specifications / User Expectations
+  _This project adds the following functionality to the existing template:_
+    * AJAX functionality for adding and deleting products to/from the shopping cart
+    * Ensures that the user can't add a negative number of items
+    * Adds flash messages for signing up, signing in, and signing out
+    * Adds Paperclip for image uploads
+    * Adds Stripe for payment
+    * TBD
+    * TBD
 
 ## Setup/Installation Requirements
 
