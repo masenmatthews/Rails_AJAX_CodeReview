@@ -7,6 +7,7 @@
       <h5><%= link_to product.name, product_path(product), id: "#{product.id}", remote: true %></h5>
       <div id="product_description<%= product.id %>"></div>
       <div id="product_price<%= product.id %>"></div>
+      <div id="product_image<%= product.id %>"></div>
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
         <%= f.number_field :quantity, value: 0 %>
