@@ -11,13 +11,13 @@
 
 ## Specifications / User Expectations
   _This project adds the following functionality to the existing template:_
-    * AJAX functionality for adding and deleting products to/from the shopping cart
-    * Ensures that the user can't add a negative number of items
-    * Adds flash messages for signing up, signing in, and signing out
-    * Adds Paperclip for image uploads
+    * AJAX functionality for adding and deleting products to/from the shopping cart DONE
+    * Ensures that the user can't add a negative number of items DONE
+    * Adds flash messages for signing up, signing in, and signing out DONE
+    * Adds Paperclip for image uploads IN PROGRESS
     * Adds Stripe for payment
-    * TBD
-    * TBD
+    * Add password validations DONE
+    * Add product validations DONE
 
 ## Setup/Installation Requirements
 
