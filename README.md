@@ -40,8 +40,9 @@ Support questions, ideas, suggestions, and other contact inquiries can be direct
 ## Technologies Used
 
 This application was created with Ruby On Rails. It uses the following technologies:
-  * Materialize
-  * BCrypt
+  * Materialize (for styling)
+  * BCrypt (for authentication)
+  * Paperclip (for images)
 
 ### License
 
