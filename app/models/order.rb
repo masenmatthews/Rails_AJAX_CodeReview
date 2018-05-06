@@ -8,6 +8,10 @@ class Order < ApplicationRecord
     self.total_price = order_items.collect { |item| item.product.price * item.quantity }.sum
   end
 
+  def update_total
+    self.total_price = calculate_total
+  end
+
   def finalize(user)
     self.user_id = user.id
     self.status = 2
