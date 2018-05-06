@@ -7,7 +7,7 @@
 #### By _Masen Matthews_
 
 ## Description
-  _This project is designed to simulate a situation where the main developer for an e-commerce site randomly decides to move away to Bali. The developer didn't leave behind a good README, any sort of well-kept commit history, and many swaths of code that could use some refactoring. Naturally, the goal of this project is to remedy all of these issues. Additionally, AJAX is added to enhance the online shopping experience._
+  This project is designed to simulate a situation where the main developer for an e-commerce site randomly decides to move away to Bali. The developer didn't leave behind a good README, any sort of well-kept commit history, and many swaths of code that could use some refactoring. Naturally, the goal of this project is to remedy all of these issues. Additionally, AJAX is added to enhance the online shopping experience.
 
 ## Specifications / User Expectations
   _This project adds the following functionality to the existing template:_
@@ -30,13 +30,16 @@
     ⋅⋅* $ bundle exec rails db:seed
 4. Open the project directory in Atom or a text editor of your choice
 5. Create a file called stripe.rb in config/initializers. The file path should read: config/initializers/stripe.rb
+
     ⋅⋅* Add the following code snippet to the file:
+    
         Rails.configuration.stripe = {
           :publishable_key => ENV['PUBLISHABLE_KEY'],
           :secret_key      => ENV['SECRET_KEY']
         }
 
         Stripe.api_key = Rails.configuration.stripe[:secret_key]
+
     ⋅⋅* NOTE: You will have to add your own publishable key and secret key to this file. These can be obtained by registering for the Stripe API keys on www.stripe.com.
 6. Open a new tab in the terminal and run the following command to open the Rails server.
     ⋅⋅* $ rails s
