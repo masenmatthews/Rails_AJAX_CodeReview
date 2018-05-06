@@ -21,13 +21,26 @@
 
 ## Setup/Installation Requirements
 
-* _Clone GitHub repository to desktop or desired directory_
-* _Navigate to directory in terminal_
-* _Run $ bundle and $ bundle install to ensure that the included gems are installed and functional_
-* _Run $ bundle exec rails db:create to create the database associated with the program_
-* _Run $ bundle exec rails db:migrate to ensure that migrations are properly executed_
-* _Run $ bundle exec rails db:seed to populate the database from the seed file_
-* _Run $ rails server to launch the Rails server - the application can be viewed in a web browser by navigating to localhost:3000_
+1. Clone GitHub repository to desktop or desired directory
+2. Navigate to project directory in terminal
+3. Install required gems, set up the database, and seed the database by running the following commands (in order) in the terminal. If you run in into an error while setting up the database, try opening another tab in the terminal and run $ postgres to ensure that your database can be set up correctly.
+    ⋅⋅* $ bundle
+    ⋅⋅* $ bundle exec rails db:create
+    ⋅⋅* $ bundle exec rails db:migrate
+    ⋅⋅* $ bundle exec rails db:seed
+4. Open the project directory in Atom or a text editor of your choice
+5. Create a file called stripe.rb in config/initializers. The file path should read: config/initializers/stripe.rb
+    ⋅⋅* Add the following code snippet to the file:
+        Rails.configuration.stripe = {
+          :publishable_key => ENV['PUBLISHABLE_KEY'],
+          :secret_key      => ENV['SECRET_KEY']
+        }
+
+        Stripe.api_key = Rails.configuration.stripe[:secret_key]
+    ⋅⋅* NOTE: You will have to add your own publishable key and secret key to this file. These can be obtained by registering for the Stripe API keys on www.stripe.com.
+6. Open a new tab in the terminal and run the following command to open the Rails server.
+    ⋅⋅* $ rails s
+7. View the site by navigating to localhost:3000 in Google Chrome or another web browser.
 
 ## Known Bugs
 

@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :products
   resources :order_items
   resource :cart, only: [:show]
-
+  resources :charges
+  
   get '/sign_up' => 'users#new'
   post '/users' => 'users#create'
 
